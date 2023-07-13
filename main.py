@@ -14,7 +14,7 @@ co5 = "#ef5350"   # vermelha
 
 janela = Tk()
 janela.title('')
-janela.geometry('550x510')
+janela.geometry('700x600')
 janela.configure(bg=co1)
 
 ttk.Separator(janela, orient=HORIZONTAL).grid(row=0, columnspan=1, ipadx=272)
@@ -23,7 +23,7 @@ style = ttk.Style(janela)
 style.theme_use('clam')
 
 #criando frame
-frame_pokemon = Frame(janela, width=550, height=290, relief='flat')
+frame_pokemon = Frame(janela, width=700, height=290, relief='flat')
 frame_pokemon.grid(row=1, column=0)
 
 def troca_pokemon(i):
@@ -51,7 +51,6 @@ def troca_pokemon(i):
     pok_def['text'] = pokemon[i]['status'][2]
     pok_vel['text'] = pokemon[i]['status'][3]
     pok_tot['text'] = pokemon[i]['status'][4]
-
     pok_hb1['text'] = pokemon[i]['habilidades'][0]
     pok_hb2['text'] = pokemon[i]['habilidades'][1]
 
@@ -107,39 +106,63 @@ img_pok_1 = Image.open('images/cabeca-pikachu.png')
 img_pok_1 = img_pok_1.resize((40, 40))
 img_pok_1 = ImageTk.PhotoImage(img_pok_1)
 b_pok_1 = Button(janela,command=lambda:troca_pokemon('Pikachu'), image=img_pok_1, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
-b_pok_1.place(x=375,y=10)
+b_pok_1.place(x=500,y=10)
 
 img_pok_2 = Image.open('images/cabeca-bulbasaur.png')
 img_pok_2 = img_pok_2.resize((40, 40))
 img_pok_2= ImageTk.PhotoImage(img_pok_2)
 b_pok_2 = Button(janela,command=lambda:troca_pokemon('Bulbasaur'), image=img_pok_2, text='Bulbasaur', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
-b_pok_2.place(x=375,y=65)
+b_pok_2.place(x=500,y=65)
 
 img_pok_3 = Image.open('images/cabeca-charmander.png')
 img_pok_3 = img_pok_3.resize((40, 40))
 img_pok_3 = ImageTk.PhotoImage(img_pok_3)
 b_pok_3 = Button(janela,command=lambda:troca_pokemon('Charmander'), image=img_pok_3, text='Charmander', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
-b_pok_3.place(x=375,y=120)
+b_pok_3.place(x=500,y=120)
 
 img_pok_4 = Image.open('images/cabeca-dragonite.png')
 img_pok_4 = img_pok_4.resize((40, 40))
 img_pok_4 = ImageTk.PhotoImage(img_pok_4)
 b_pok_4 = Button(janela,command=lambda:troca_pokemon('Dragonite'), image=img_pok_4, text='Dragonite', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
-b_pok_4.place(x=375,y=180)
+b_pok_4.place(x=500,y=180)
 
 img_pok_5 = Image.open('images/cabeca-gengar.png')
 img_pok_5 = img_pok_5.resize((40, 40))
 img_pok_5 = ImageTk.PhotoImage(img_pok_5)
 b_pok_5 = Button(janela,command=lambda:troca_pokemon('Gengar'), image=img_pok_5, text='Gengar', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
-b_pok_5.place(x=375,y=240)
+b_pok_5.place(x=500,y=240)
 
 img_pok_6 = Image.open('images/cabeca-gyarados.png')
 img_pok_6 = img_pok_6.resize((40, 40))
 img_pok_6 = ImageTk.PhotoImage(img_pok_6)
 b_pok_6 = Button(janela,command=lambda:troca_pokemon('Gyarados'), image=img_pok_6, text='Gyarados', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
-b_pok_6.place(x=375,y=300)
+b_pok_6.place(x=500,y=300)
 
-random_pokemon = ['Dragonite', 'Gengar', 'Gyarados', 'Charmander', 'Pikachu', 'Bulbasaur']
+img_pok_7 = Image.open('images/cabeca-mewtwo.png')
+img_pok_7 = img_pok_7.resize((40, 40))
+img_pok_7 = ImageTk.PhotoImage(img_pok_7)
+b_pok_7 = Button(janela,command=lambda:troca_pokemon('Mewtwo'), image=img_pok_7, text='Mewtwo', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_7.place(x=500,y=360)
+
+img_pok_8 = Image.open('images/cabeca-mew.png')
+img_pok_8 = img_pok_8.resize((40, 40))
+img_pok_8 = ImageTk.PhotoImage(img_pok_8)
+b_pok_8 = Button(janela,command=lambda:troca_pokemon('Mew'), image=img_pok_8, text='Mew', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_8.place(x=500,y=420)
+
+img_pok_9 = Image.open('images/cabeca-magikarp.png')
+img_pok_9 = img_pok_9.resize((40, 40))
+img_pok_9 = ImageTk.PhotoImage(img_pok_9)
+b_pok_9 = Button(janela,command=lambda:troca_pokemon('Magikarp'), image=img_pok_9, text='Magikarp', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_9.place(x=500,y=480)
+
+img_pok_10 = Image.open('images/cabeca-arceus.png')
+img_pok_10 = img_pok_10.resize((40, 40))
+img_pok_10 = ImageTk.PhotoImage(img_pok_10)
+b_pok_10 = Button(janela,command=lambda:troca_pokemon('Arceus'), image=img_pok_10, text='Arceus', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_10.place(x=700,y=540)
+
+random_pokemon = ['Dragonite', 'Gengar', 'Gyarados', 'Charmander', 'Pikachu', 'Bulbasaur', 'Mewtwo', 'Mew', 'Magikarp', 'Arceus']
 poke_final = random.sample(random_pokemon, 1)
 
 troca_pokemon(poke_final[0])
