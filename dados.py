@@ -1,4 +1,3 @@
-
 pokemon = {
     'Pikachu' : {
         'status' : ['HP: 300', 'Ataque: 600', 'Defesa: 500','Velocidade: 300','Total: 1700'],
@@ -34,5 +33,29 @@ pokemon = {
         'status' : ['HP: 300','Ataque: 600','Defesa: 500','Velocidade: 300','Total: 1.700'],
         'habilidades': ["Jato d'Água",'Hidro bomba'],
         'tipo': ['#130','água','images/gyarados.png', '#76BEFE'],
-}
+},
+
+     'Mewtwo':{
+        'status' : ['HP: 160','Ataque: 110','Defesa: 90','Velocidade: 130','Total: 490'],
+        'habilidades': ["Controle mental","Teleporte"],
+        'tipo': ['#150', 'Psíquico', 'images/mewtwo.png', '#B696B7'],
+},
+
+     'Mew':{
+        'status': ['HP: 100','Ataque: 100','Defesa: 100','Velocidade: 100','Total: 400'],      
+        'habilidades': ["Controle mental","Teleporte"],
+        'tipo': ['#151','Psíquico','images/mew.png','#CFA6C2'],
+},
+
+     'Arceus':{
+        'status': ['HP: 120','Ataque: 120','Defesa: 120','Velocidade: 120','Total: 480'],   
+        'habilidades': ['manipulação da realidade ','manipulação dimensional'],
+        'tipo': ['#493','Normal','images/arceus.png','#E6E6E6'],        
+},
+
+     'Magikarp':{
+        'status': ['HP: 20','Ataque: 10','Defesa:55 ','Velocidade: 80','Total: 190'],
+        'habilidades': ['Swift Swim'],
+        'tipo': ['#129','Água','images/magikarp.png','#B7594F'],
+},
 }
